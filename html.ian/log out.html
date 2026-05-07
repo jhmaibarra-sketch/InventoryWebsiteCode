@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventory Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f4f6f9; margin:0; padding:0; }
+    header { background:#2c3e50; color:#fff; padding:20px; display:flex; justify-content:space-between; align-items:center; }
+    header h2 { margin:0; }
+    .logout { background:#c0392b; color:#fff; padding:8px 14px; border-radius:4px; text-decoration:none; font-weight:bold; }
+    .container { max-width:1000px; margin:30px auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+    table { width:100%; border-collapse:collapse; margin-top:20px; }
+    th, td { border:1px solid #ddd; padding:10px; text-align:center; }
+    th { background:#34495e; color:#fff; }
+    tr:nth-child(even) { background:#f9f9f9; }
+    a.button { padding:6px 12px; border-radius:4px; text-decoration:none; color:#fff; margin:2px; display:inline-block; }
+    .borrow { background:#27ae60; }
+    .return { background:#2980b9; }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Inventory Dashboard</h2>
+    <!-- Logout button -->
+    <a href="register.html" class="logout">Logout</a>
+  </header>
+
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th><th>Status</th><th>Condition</th><th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Mouse</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-mouse.html" class="button borrow">Borrow</a><a href="return-mouse.html" class="button return">Return</a></td></tr>
+          
+        <tr><td>Keyboard</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-keyboard.html" class="button borrow">Borrow</a><a href="return-keyboard.html" class="button return">Return</a></td></tr>
+        <tr><td>Monitor</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-monitor.html" class="button borrow">Borrow</a><a href="return-monitor.html" class="button return">Return</a></td></tr>
+        <tr><td>System Unit</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-systemunit.html" class="button borrow">Borrow</a><a href="return-systemunit.html" class="button return">Return</a></td></tr>
+        <tr><td>Headset</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-headset.html" class="button borrow">Borrow</a><a href="return-headset.html" class="button return">Return</a></td></tr>
+        <tr><td>Webcam</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-webcam.html" class="button borrow">Borrow</a><a href="return-webcam.html" class="button return">Return</a></td></tr>
+        <tr><td>HDMI Cable</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-hdmi.html" class="button borrow">Borrow</a><a href="return-hdmi.html" class="button return">Return</a></td></tr>
+        <tr><td>LAN Cable</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-lan.html" class="button borrow">Borrow</a><a href="return-lan.html" class="button return">Return</a></td></tr>
+        <tr><td>Extension Cord</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-extension.html" class="button borrow">Borrow</a><a href="return-extension.html" class="button return">Return</a></td></tr>
+        <tr><td>Projector</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-projector.html" class="button borrow">Borrow</a><a href="return-projector.html" class="button return">Return</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+
+
+ 

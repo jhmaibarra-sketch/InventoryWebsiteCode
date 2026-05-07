@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Return Mouse</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f4f6f9; text-align:center; padding:50px; }
+    .box { background:#fff; padding:30px; border-radius:8px; display:inline-block; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+    label { display:block; margin-top:15px; font-weight:bold; }
+    input, select { padding:8px; width:250px; border:1px solid #ccc; border-radius:4px; margin-top:5px; }
+    button { margin-top:20px; padding:10px 20px; border:none; border-radius:4px; background:#2980b9; color:#fff; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Return Extension Cord</h2>
+    <p>Status: <strong>Available</strong></p>
+    <p><strong>Borrowed At:</strong> 04/07/2026 2:00 PM</p>
+    <p><strong>Returned At:</strong> 04/07/2026 2:30 PM</p>
+
+    <!-- Input for condition -->
+    <form action="dashboard-return.html" method="post">
+      <label for="condition">Enter Condition upon Return:</label>
+      <select id="condition" name="condition" required>
+        <option value="">--Select Condition--</option>
+        <option value="Good">Good</option>
+        <option value="Minor Damage">Minor Damage</option>
+        <option value="Major Damage">Major Damage</option>
+      </select>
+      <button type="submit">Submit Return</button>
+    </form>
+  </div>
+</body>
+</html>

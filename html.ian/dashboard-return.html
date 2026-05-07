@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventory Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f4f6f9; margin:0; padding:0; }
+    header { background:#2c3e50; color:#fff; padding:20px; text-align:center; }
+    .container { max-width:1000px; margin:30px auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+    table { width:100%; border-collapse:collapse; margin-top:20px; }
+    th, td { border:1px solid #ddd; padding:10px; text-align:center; }
+    th { background:#34495e; color:#fff; }
+    tr:nth-child(even) { background:#f9f9f9; }
+    .history { margin-top:30px; border:1px solid #ddd; padding:20px; border-radius:8px; background:#fff; }
+    .history h3 { margin-top:0; }
+    .history ul { list-style-type:none; padding:0; }
+    .history li { padding:8px 0; border-bottom:1px solid #eee; }
+
+     body { font-family: Arial, sans-serif; background:#f4f6f9; margin:0; padding:0; }
+    header { background:#2c3e50; color:#fff; padding:20px; text-align:center; }
+    .container { max-width:1000px; margin:30px auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+    table { width:100%; border-collapse:collapse; margin-top:20px; }
+    th, td { border:1px solid #ddd; padding:10px; text-align:center; }
+    th { background:#34495e; color:#fff; }
+    tr:nth-child(even) { background:#f9f9f9; }
+    a.button { padding:6px 12px; border-radius:4px; text-decoration:none; color:#fff; margin:2px; display:inline-block; }
+    .borrow { background:#27ae60; }
+    .return { background:#2980b9; }
+
+     body { font-family: Arial, sans-serif; background:#f4f6f9; margin:0; padding:0; }
+    header { background:#2c3e50; color:#fff; padding:20px; display:flex; justify-content:space-between; align-items:center; }
+    header h2 { margin:0; }
+    .logout { background:#c0392b; color:#fff; padding:8px 14px; border-radius:4px; text-decoration:none; font-weight:bold; }
+    .container { max-width:1000px; margin:30px auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+    table { width:100%; border-collapse:collapse; margin-top:20px; }
+    th, td { border:1px solid #ddd; padding:10px; text-align:center; }
+    th { background:#34495e; color:#fff; }
+    tr:nth-child(even) { background:#f9f9f9; }
+    a.button { padding:6px 12px; border-radius:4px; text-decoration:none; color:#fff; margin:2px; display:inline-block; }
+    .borrow { background:#27ae60; }
+    .return { background:#2980b9; }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Inventory Dashboard</h2>
+    <!-- Logout button -->
+    <a href="register.html" class="logout">Logout</a>
+  </header>
+
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th><th>Status</th><th>Condition</th><th>Borrowed At</th><th>Returned At</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mouse</td>
+          <td>Not Available</td>
+          <td><strong>Minor Damage</strong></td>
+          <td>04/07/2026 2:00 PM</td>
+          <td>04/07/2026 2:30 PM</td>
+        </tr>
+        <tr>
+           <form action="return-mouse.html" method="post"></form>
+          <tr><td>Keyboard</td><td>Available</td><td>Good</td>
+          <td><a href="dashbord3.html" class="button borrow">Borrow</a><a href="dashbord3.html" class="button return">Return</a></td></tr>
+        <tr><td>Monitor</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-monitor.html" class="button borrow">Borrow</a><a href="return-monitor.html" class="button return">Return</a></td></tr>
+        <tr><td>System Unit</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-systemunit.html" class="button borrow">Borrow</a><a href="return-systemunit.html" class="button return">Return</a></td></tr>
+        <tr><td>Headset</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-headset.html" class="button borrow">Borrow</a><a href="return-headset.html" class="button return">Return</a></td></tr>
+        <tr><td>Webcam</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-webcam.html" class="button borrow">Borrow</a><a href="return-webcam.html" class="button return">Return</a></td></tr>
+        <tr><td>HDMI Cable</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-hdmi.html" class="button borrow">Borrow</a><a href="return-hdmi.html" class="button return">Return</a></td></tr>
+        <tr><td>LAN Cable</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-lan.html" class="button borrow">Borrow</a><a href="return-lan.html" class="button return">Return</a></td></tr>
+        <tr><td>Extension Cord</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-extension.html" class="button borrow">Borrow</a><a href="return-extension.html" class="button return">Return</a></td></tr>
+        <tr><td>Projector</td><td>Available</td><td>Good</td>
+          <td><a href="borrow-projector.html" class="button borrow">Borrow</a><a href="return-projector.html" class="button return">Return</a></td></tr>
+
+      </tbody>
+    </table>
+
+    <!-- Transaction History -->
+    <div class="history">
+      <h3>Transaction History</h3>
+      <ul>
+        <li>[BORROW] Student 02-2526-123456 borrowed Mouse at 04/07/2026 2:00 PM | Condition: Good</li>
+        <li>[RETURN] Student 02-2526-123456 returned Mouse at 04/07/2026 2:30 PM | Condition: Minor Damage</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
